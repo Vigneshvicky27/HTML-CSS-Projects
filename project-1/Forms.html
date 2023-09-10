@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> login and registration form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+<div class="form-box">
+<div class="button-box">
+<div id="btn"></div>
+<button type="button" class="login-btn" onclick="Login()">Log In</button>
+<button type="button" class="login-btn" onclick="register()">Register</button>   
+</div>
+<form id="Login" class ="input-group">
+<input type="text" class="input-data" placeholder="User Id" required>
+<input type="text" class="input-data" placeholder="Enter Password" required>
+<input type="checkbox" class="check-box"><span>Remember Password</span>
+<button type="submit" class="submit-btn">Log in</button>
+</form>
+<form id="register" class ="input-group">
+<input type="text" class="input-data" placeholder="User Id" required>
+<input type="Email" class="input-data" placeholder="Email Id" required>
+<input type="text" class="input-data" placeholder="Enter Password" required>
+<input type="text" class="input-data" placeholder="Comfirm Password" required>
+<input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
+<button type="submit" class="submit-btn">Register</button>
+</form>
+</div>
+</div>
+<script>
+var x=document.getElementById("Login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+
+function register(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="110px";
+}
+function Login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0";
+}
+</script>
+</body>
+</html>
